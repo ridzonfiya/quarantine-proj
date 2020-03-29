@@ -7,8 +7,11 @@ public class Activities
     private boolean Camera = false;
     private boolean NintendoSwitch = false;
     private boolean Netflix = false;
-    
-  
+
+    public ArrayList<String> possActive;
+
+
+
     public void setTV(boolean dap)
     {
         TV = dap;
@@ -71,6 +74,7 @@ public class Activities
         }
     }
     
+
     public void testPlayVidGame()
     {
         if(canPlayVidGame() == true)
@@ -119,7 +123,6 @@ public class Activities
         }
     }
     
-    ArrayList<String> possActive = new ArrayList<String>();
     public Activities()
     {
         smartPhone = false;
@@ -127,5 +130,7 @@ public class Activities
         computer = false;
         Camera = false;
         NintendoSwitch = false;
+        possActive = new ArrayList<String>();
+        
     }   
 }
